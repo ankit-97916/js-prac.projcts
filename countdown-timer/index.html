@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>count-down timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <div class="main">
+      <div id="enter">
+        <input type="datetime-local" id="enterl" > 
+        
+        <input type="text" id="event" placeholder="Enter Your Event">
+        <button id="submit">Enter</button>
+  
+      </div>
+  
+      <div class="title"><h3 id="h3"></h3></div>
+      <div class="title" id="end-date"><h3></h3></div>
+      <div class="col">
+        <div >
+          <input type="text" class="data" readonly  value="0" />
+          <br>
+          <label for="">days</label>
+        </div>
+        <div>
+          <input type="text" class="data" readonly value="0" />
+          <br>
+          <label for="">Hours</label>
+        </div>
+        <div>
+            <input type="text" class="data" readonly value="0"/>
+            <br> 
+            <label for="">Minutes</label>
+        </div>
+        <div>
+            <input type="text" class="data" readonly value="0"/>
+            <br>
+             <label for="">Seconds</label>
+            </div>
+      </div>
+      <button id="reset">Reset</button>
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html> 
+
+
+
+
