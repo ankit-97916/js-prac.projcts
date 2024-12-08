@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Validation Form With Javascript</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-  
-
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h2>REGISTRATION FORM</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Form With Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>REGISTRATION FORM</h2>
+      </div>
+      <form action="" class="form">
+        <div class="form-control">
+          <label for="">Username :</label>
+          <input
+            type="text "
+            name=""
+            id="username"
+            placeholder="Enter Your Full Name"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form-control">
+          <label for="">Email :</label>
+          <input
+            type="email "
+            name=""
+            id="email"
+            placeholder="Enter Your Email"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form-control">
+          <label for="">Phone No. :</label>
+          <input
+            type="number"
+            name=""
+            id="phone"
+            placeholder="Enter Your Phone Number"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form-control">
+          <label for="">Password :</label>
+          <input
+            type="password"
+            name=""
+            id="pass"
+            placeholder="Enter Your Password"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form-control">
+          <label for="">Confirm Password :</label>
+          <input
+            type="Password"
+            name=""
+            id="c-pass"
+            placeholder="Enter Your Password Again"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <input type="submit" value="Submit" class="btn" />
+      </form>
     </div>
-    <form action="" class="form">
-      <div class="form-control">
-        <label for="">Username :</label>
-        <input type="text " name="" id="username" placeholder="Enter Your Full Name">
-        <i class="fa-solid fa-circle-check"></i>
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <small>Error Msg</small>
 
-      </div>
-      <div class="form-control">
-        <label for="">Email :</label>
-        <input type="email " name="" id="email" placeholder="Enter Your Email" >
-        <i class="fa-solid fa-circle-check"></i>
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <small>Error Msg</small>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-      </div>
-      <div class="form-control">
-        <label for="">Phone No. :</label>
-        <input type="number" name="" id="phone" placeholder="Enter Your Phone Number">
-        <i class="fa-solid fa-circle-check"></i>
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <small>Error Msg</small>
-
-      </div>
-      <div class="form-control">
-        <label for="">Password :</label>
-        <input type="password" name="" id="pass" placeholder="Enter Your Password">
-        <i class="fa-solid fa-circle-check"></i>
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <small>Error Msg</small>
-
-      </div>
-      <div class="form-control">
-        <label for="">Confirm Password :</label>
-        <input type="Password" name="" id="c-pass" placeholder="Enter Your Password Again">
-        <i class="fa-solid fa-circle-check"></i>
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <small>Error Msg</small>
-
-      </div>
-      <input type="submit" value="Submit" class="btn">
-
-
-    </form>
-  </div>
-
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

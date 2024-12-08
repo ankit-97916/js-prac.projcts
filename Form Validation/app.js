@@ -7,17 +7,17 @@ const cPass = document.querySelector("#c-pass");
 
 //add event listener for submit form-
 form.addEventListener("submit", () => {
-//    event.preventDefault();
+  //    event.preventDefault();
   validate();
 });
 
-const sendData = ( userNameVal,sRate, count) => {
+const sendData = (userNameVal, sRate, count) => {
   if (sRate === count) {
     alert("Registration Successsfull");
     //  swal("Welcome ! " + userNameVal, "success");
-     location.href = `abc.html?username=${userNameVal}`
+    location.href = `abc.html?username=${userNameVal}`;
   }
-}
+};
 
 // for final data validation-
 const successMsg = (userNameVal) => {
