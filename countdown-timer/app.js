@@ -1,45 +1,30 @@
 let input = document.querySelectorAll(".data");
 let eEvent = document.querySelector("#event");
 let rBtn = document.querySelector("#reset");
-let entry = document.querySelector("#enterl")
+let entry = document.querySelector("#enterl");
 let btn = document.querySelector("#submit");
-let rCol = document.querySelector(".col")
-let newH3 =  document.querySelector("#h3")
+let rCol = document.querySelector(".col");
+let newH3 = document.querySelector("#h3");
 let h3 = document.querySelector("h3");
 
-function resetTime() {
-  rBtn.addEventListener("click", function() {
-    
+  rBtn.addEventListener("click", function () {
     entry.value = "";
     h3.innerText = "";
     eEvent.value = "";
-    
-    
-
-  } );
-};
-resetTime();
+  });
 
 
 
-btn.addEventListener("click", function () {
-    h3.innerText = entry.value;
+btn.addEventListener("submit", function () {
+  h3.innerText = entry.value;
   entry.value = end;
 
-
-   newH3.innerText = eEvent.value;
-  
-
-                                                     
+  newH3.innerText = eEvent.value;
 
   entry.value = clock();
-  
-
-  
-
 });
 
-function clock() {                        
+function clock() {
   const end = new Date(h3.innerText);
   const now = new Date();
 
@@ -56,7 +41,7 @@ function clock() {
   // convert into seconds;
 
   input[3].value = Math.floor(diff) % 60;
-};
+}
 
 setInterval(() => {
   clock();
