@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#wrapper {
+  height: 600px;
+  width: 450px;
+  border: none;
+  border-radius: 20px;
+
+  background-color: rgb(223, 218, 218);
+}
+
+h1 {
+  font-size: 35px;
+  padding: 20px;
+  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
+
+  font-weight: bolder;
+  background: linear-gradient(
+    90deg,
+    rgba(151, 214, 249, 1) 0%,
+    rgba(49, 127, 251, 1) 50%,
+    rgba(121, 69, 252, 1) 100%
+  );
+}
+
+.para {
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+  font-size: 21px;
+}
+
+.from {
+  height: 200px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 28px;
+  /* line-height: 55px; */
+}
+
+.from input {
+  font-size: 20px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.from #subt:active {
+  background: linear-gradient(
+    90deg,
+    rgb(32, 100, 137) 0%,
+    rgba(49, 127, 251, 1) 50%
+  );
+}
+
+.resultpass {
+  font-size: 21px;
+  margin-top: 20px;
+  font-weight: bolder;
+  line-height: 35px;
+  text-align: center;
+}
+
